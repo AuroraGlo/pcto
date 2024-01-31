@@ -6,7 +6,7 @@ int main()
     int n = 0;
 
     printf("inserisci un numero\n");
-    scanf("%d\n" , &x);
+    scanf("%d" , &x);
     
     while(n<3 && y<=x/2) 
     {
