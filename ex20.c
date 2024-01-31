@@ -6,24 +6,32 @@ void operazioni()
     int y;
     char operazione;
 
-printf("inserisci un numero:\n");
-scanf(" %d" , &x);
+    printf("inserisci un numero:\n");
+    scanf(" %d" , &x);
 
-printf("inserisci un secondo numero:\n");
-scanf(" %d" , &y);
+    printf("inserisci un secondo numero:\n");
+    scanf(" %d" , &y);
 
-printf("che operazione vuoi eseguire su x e y?\n");
-scanf(" %c" , &operazione);
+    printf("che operazione vuoi eseguire su x e y?\n");
+    scanf(" %c" , &operazione);
 
 
-if(operazione == '+' || operazione == '-' || operazione == '*' || operazione == '/')
-{
     if(operazione == '+')
     {
-        printf("somma = %d", x+y);
+        printf("somma = %d\n", x+y);
     }
-    
-}
+    else if(operazione == '-')
+    {
+        printf("sottrazione = %d\n", x-y);
+    }
+    else if(operazione == '*')
+    {
+        printf("moltiplicazione = %d\n", x*y);
+    }
+    else if(operazione == '/')
+    {
+        printf("divisione = %d\n", x/y);
+    }
 
 }
 
